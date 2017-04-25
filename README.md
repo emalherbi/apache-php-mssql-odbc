@@ -33,10 +33,10 @@ docker stop NAME_PROCESSES
 
 #### Remove all processes
 ```bash
-$ docker rm NAME_PROCESSES
+docker rm NAME_PROCESSES
 ```
 
-# Other
+## Other
 Uncomment these two lines in Dockerfile to fix "non-UTF8" chars encoding and time format problems:
 ```bash
 ADD freetds.conf /etc/freetds/
