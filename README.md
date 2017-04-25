@@ -16,7 +16,24 @@ docker run -d -p 80:80 ppoffice/apache-php-mssql-odbc
 ```
 With custom `www` folder:
 ```bash
-docker run -d -p 80:80 -v (your site's folder):/var/www/ ppoffice/apache-php-mssql-odbc
+docker run -d -p 5000:80 -v /home/eduardo/Sites/www-xpert:/var/www/ ppoffice/apache-php-mssql-odbc
+```
+
+## Docker Commands
+
+#### List all processes
+```bash
+sudo docker ps -a -q
+```
+
+#### Stop all processes
+```bash
+docker stop NAME_PROCESSES
+```
+
+#### Remove all processes
+```bash
+$ docker rm NAME_PROCESSES
 ```
 
 # Other
